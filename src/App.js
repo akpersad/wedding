@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import "./globals/global.scss";
 //Import all needed Component for this tutorial
 import {
     BrowserRouter as Router,
@@ -9,9 +10,9 @@ import {
     Redirect
 } from "react-router-dom";
 
-import MainPage from "./pages";
-import UsersPage from "./pages/users";
-import NotFoundPage from "./pages/404";
+import MainPage from "./pages/index/";
+import UsersPage from "./pages/users/users";
+import NotFoundPage from "./pages/404/404";
 
 class App extends Component {
     render() {
