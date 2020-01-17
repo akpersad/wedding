@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 import "./globals/global.scss";
+import "./globals/imported.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 //Import all needed Component for this tutorial
 import {
     BrowserRouter as Router,

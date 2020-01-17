@@ -7,11 +7,9 @@ import Header from "../header/header";
 class MainPage extends Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <Header pathName={this.props.location} />
-                <h3 id='test'>Welcome to the React Router Tutorial</h3>
-                <small>Main Page</small>
-            </div>
+            </React.Fragment>
         );
     }
 }

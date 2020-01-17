@@ -4,7 +4,7 @@ import Header from "../header/header";
 class UsersPage extends Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <Header pathName={this.props.location} />
                 <ul>
                     {["Alex", "John", "Jaz", "fedrik", "missali"].map(
@@ -13,7 +13,7 @@ class UsersPage extends Component {
                         }
                     )}
                 </ul>
-            </div>
+            </React.Fragment>
         );
     }
 }
