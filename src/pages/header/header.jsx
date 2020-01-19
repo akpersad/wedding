@@ -6,7 +6,7 @@ import "./header.scss";
 import $ from "jquery";
 import Popper from "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { FaBeer } from "react-icons/fa";
+import { FaBars, FaCaretDown, FaCaretRight } from "react-icons/fa";
 
 class Header extends Component {
     setCurrentLink(linkLists) {
@@ -125,11 +125,10 @@ class Header extends Component {
 
         return (
             <React.Fragment>
-                {/* Test */}
                 <header className='header-object d-md-flex py-3'>
                     <div class='container'>
                         <div class='menu-nav-icon' data-nav-menu='#main-menu'>
-                            <FaBeer />
+                            <FaBars />
                         </div>
 
                         <ul
@@ -144,7 +143,7 @@ class Header extends Component {
                             <li class='drop-down'>
                                 <a href='#!'>
                                     OUR STORIES
-                                    <i class='icon icon-caret-down'></i>
+                                    <FaCaretDown />
                                 </a>
 
                                 <ul class='drop-down-menu'>
@@ -157,7 +156,7 @@ class Header extends Component {
                                     <li class='drop-down'>
                                         <a href='#!'>
                                             CATEGORIES
-                                            <i class='icon icon-caret-right'></i>
+                                            <FaCaretRight />
                                         </a>
                                         <ul class='drop-down-menu drop-down-inner'>
                                             <li>
@@ -186,7 +185,6 @@ class Header extends Component {
                         </ul>
                     </div>
                 </header>
-                {/* Emd Test */}
             </React.Fragment>
         );
     }
