@@ -8,6 +8,10 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     color: #fff;
 
+    .current {
+        color: black;
+    }
+
     /* MIDDLE AREA */
     .logo {
         margin: 5px 0 20px;
@@ -31,6 +35,16 @@
             border: 2px solid transparent;
             border-radius: 2px;
             background: transparent;
+            display: inline-block;
+            text-decoration: none;
+            transition: all 0.3s;
+
+            &:focus,
+            &:active,
+            &:hover {
+                text-decoration: none;
+                color: #e45f74;
+            }
         }
 
         &.visible {
@@ -39,6 +53,9 @@
 
         /* DROPDOWN MENU STYLING */
         li {
+            list-style: none;
+            display: inline-block;
+
             &.drop-down {
                 position: relative;
                 text-align: left;
